@@ -34,6 +34,7 @@ public class SeqSearch {
 	static int seqSearch(int[] a, int n, int key) {
 		int i = 0;
 		
+		// 방법 1. 무한루프
 		while(true) {
 			if(i==n) {
 				return -1;		// 검색 실패! (-1을 반환)
@@ -43,5 +44,14 @@ public class SeqSearch {
 			}
 			i++;
 		}
+		
+		// 방법 2. n회 루프
+//		while(i<n) {
+//			if(a[i]==key) {
+//				return i;		// 검색 성공!
+//			}
+//			i++;
+//		}
+//		return -1;				// 검색 실패!
 	}
 }
